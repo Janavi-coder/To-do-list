@@ -11,7 +11,7 @@ todolist.addEventListener('click',deletecheck);
 //Functions
 function addtodo(event){
     event.preventDefault();
-       if (todoinput.value.trim() === "") {
+    if (todoinput.value.trim() === "") {
         return;
     }
     //todo div
