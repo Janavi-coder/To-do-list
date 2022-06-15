@@ -11,6 +11,9 @@ todolist.addEventListener('click',deletecheck);
 //Functions
 function addtodo(event){
     event.preventDefault();
+       if (todoinput.value.trim() === "") {
+        return;
+    }
     //todo div
     const tododiv = document.createElement('div');
     tododiv.classList.add('todo');
